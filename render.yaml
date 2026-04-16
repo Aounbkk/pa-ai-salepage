@@ -3,7 +3,7 @@ services:
     name: pa-ai-salepage
     runtime: node
     buildCommand: npm install && npm run build
-    startCommand: npm start
+    startCommand: npx next start -H 0.0.0.0 -p $PORT
     envVars:
       - key: NODE_ENV
         value: production
